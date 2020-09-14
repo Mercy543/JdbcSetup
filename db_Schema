@@ -1,0 +1,15 @@
+create database ecomercedb;
+
+use ecomercedb;
+create table eproduct(p_id bigint primary key auto_increment , name varchar(100), price decimal(10,2), creation_date timestamp default now(), expire_date timestamp default now());
+
+insert into eproduct(name,price) values ("Laptop",12000 );
+insert into eproduct(name,price) values ("Monitor",800 );
+insert into eproduct(name,price) values ("keyboard",350 );
+insert into eproduct(name,price) values ("Harddrive",700 );
+insert into eproduct(name,price) values ("Mouse",200);
+
+select * from eproduct;
+
+
+desc eproduct;
